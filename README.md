@@ -74,7 +74,7 @@ Tudo roda em **um único `index.html`**: sem instalação, sem cadastro dos joga
 **Para quem apresenta**
 
 - Acesso do apresentador protegido por usuário e senha
-- Editor de perguntas com 2 a 4 opções e tempo de 10 a 90 segundos
+- Editor de perguntas com 2 a 4 opções e tempo de 10 a 90 segundos, salvo automaticamente no navegador
 - Importar e exportar o quiz em JSON
 - Retomar a sala por até 12 horas se a aba fechar
 - Remover um jogador clicando no nome dele
@@ -87,7 +87,7 @@ Tudo roda em **um único `index.html`**: sem instalação, sem cadastro dos joga
 **Para quem joga**
 
 - Entra pelo QR code ou pelo PIN, só com o nome
-- Monta a própria gosma antes de entrar
+- Monta o próprio personagem: estilo, cor e acessório
 - Vê na hora quanto ganhou e de onde veio cada ponto
 - Acompanha a posição no ranking a cada rodada
 - Recebe conquistas e um resumo da partida no final
@@ -162,7 +162,7 @@ Cada jogador vê a própria colocação, os pontos, os acertos e a maior sequên
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/mascots-dark.svg">
-    <img src="assets/mascots.svg" alt="Gosmas: 16 cores, 16 acessórios e seus humores" width="100%">
+    <img src="assets/mascots.svg" alt="Personagens: 8 estilos, 16 cores, 16 acessórios e seus humores" width="100%">
   </picture>
 </p>
 
@@ -187,7 +187,7 @@ Cada jogador vê a própria colocação, os pontos, os acertos e a maior sequên
 | Interface | HTML, CSS e JavaScript puros, sem framework. Fonte Nunito |
 | Tempo real | Firebase Realtime Database (SDK compat 10.12.2) |
 | Modo teste | `localStorage` + `BroadcastChannel`, simula o Firebase entre abas |
-| Gosmas | SVG gerado por código, com 16 cores e 16 acessórios |
+| Personagens | SVG gerado por código, com 8 estilos, 16 cores e 16 acessórios |
 | Efeitos | Um único `<canvas>` para confete, brasas, estrelas e explosões |
 | Som | Efeitos e trilha sintetizados com Web Audio API |
 | QR code | Biblioteca qrcode-generator embutida no próprio arquivo |
@@ -227,7 +227,7 @@ rooms/
     ├── answers/
     │   └── {i}/{jogador}   opção escolhida e tempo em ms
     ├── players/
-    │   └── {jogador}       nome, gosma, pontos, sequência, acertos e resultado da rodada
+    │   └── {jogador}       nome, personagem, pontos, sequência, acertos e resultado da rodada
     └── reveal    resposta certa, contagem por opção e o mais rápido
 ```
 
@@ -323,7 +323,7 @@ Ideias para versões futuras, ainda não implementadas:
 - QR code gerado com [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator), de Kazuhiko Arase, licença MIT.
 - Fonte [Nunito](https://fonts.google.com/specimen/Nunito), licença SIL Open Font License.
 - Visual inspirado na linguagem de produtos como o Duolingo, com a paleta vermelha da identidade do projeto.
-- Gosmas, ícones, diagramas e ilustrações deste README foram criados para o projeto.
+- Personagens, ícones, diagramas e ilustrações deste README foram criados para o projeto.
 
 Este repositório ainda não define uma licença de código aberto.
 
