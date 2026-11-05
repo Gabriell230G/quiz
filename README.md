@@ -240,6 +240,7 @@ rooms/
 ```text
 quiz/
 ├── index.html            o app inteiro: telas, estilos, lógica, sons e QR code
+├── apple-touch-icon.png  ícone para quem salvar o quiz na tela inicial do celular
 ├── README.md
 └── assets/
     ├── banner.svg        capa deste README
